@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aman's Fitness Club</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            background-image: url(bg.webp);
+            background-repeat: no-repeat;
+            background-size:cover ;
+        }
+
+        .left {
+            display: inline-block;
+            position: absolute;
+            left: 34px;
+            top: 20px;
+            text-align: center;
+        }
+        .left img{
+            width: 80px;
+            height: 80px;
+           
+        }
+
+        .mid {
+            display: block;
+            width: 55%;
+            margin: 10px auto;
+        }
+
+        .right {
+            display: inline-block;
+            position: absolute;
+            right: 34px;
+            top: 20px;
+        }
+        .navbar{
+            display: inline-block;
+        }
+        .navbar li{
+            display: inline-block;
+            font-size: 25px;
+        }
+        .navbar li a{
+            color: white;
+            text-decoration: none;
+            padding: 34px 23px;
+            
+        }
+        .navbar li a:hover, .navbar li a.active{
+            text-decoration: underline;
+            color: grey;
+        }
+        .btn{
+            color: white;
+            background-color: rgb(26, 25, 25);
+            padding: 4px 14px;
+            border: grey;
+            border-radius: 10px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+        .btn:hover{
+background-color: grey;
+        }
+        .container{
+            border: 2px solid white;
+            margin: 106px 80px;
+            padding: 75px;
+            width: 33%;
+            border-radius: 28px;
+        }
+        .form-group input{
+            text-align: center;
+            display: block;
+            width: 450px;
+            padding: 1px;
+            border: 2px solid black;
+            margin: 11px auto;
+            font-size: 25px;
+            border-radius: 8px;
+        }
+        .container h1{
+            text-align: center;
+        }
+        .container button{
+            display: block;
+            width: 450px;
+            margin: auto;
+            height: 35px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="gym.jpg" alt="">
+            <div>Aman's Fitness Club</div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="" class="active">Home</a></li>
+                <li><a href="">About us</a></li>
+                <li><a href="">Fitness Calculator</a></li>
+                <li><a href="">Contact us</a></li>
+            </ul>
+
+        </div>
+        <div class="right">
+            <Button class="btn">Call us Now</Button>
+            <Button class="btn">Email us</Button>
+        </div>
+    </header>
+    <div class="container">
+       <h1>Join the best Gym of Bareilly Now</h1>
+       <form action="noaction.php">
+           <div class="form-group">
+               <input type="text"name="" placeholder="Enter your name">
+           </div>
+           <div class="form-group">
+            <input type="text"name="" placeholder="Enter your Age">
+        </div>
+        <div class="form-group">
+            <input type="text"name="" placeholder="Enter your Gender">
+        </div>
+        <div class="form-group">
+            <input type="text"name="" placeholder="Enter your Locality">
+        </div>
+        <div class="form-group">
+            <input type="text"name="" placeholder="Enter your Email-id">
+        </div>
+        <div class="form-group">
+            <input type="text"name="" placeholder="Enter your Phone Number">
+        </div>
+        <button class="btn">Submit</button>
+       </form>
+    </div>
+</body>
+
+</html>
